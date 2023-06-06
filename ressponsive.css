@@ -1,0 +1,79 @@
+/* for desktop or laptops */
+
+@media only screen and (max-width:992px) {
+    header nav ul.navigation {
+        padding: 20px 15px;
+    }
+    section.about div.slider img {
+        width: 20.666666%;
+        padding: 90px 41px;
+    }
+    section.features .tab-content .row {
+        flex-direction: column-reverse;
+    }
+    section.question .row {
+        flex-direction: column-reverse;
+    }
+    section.question .img {
+        height: 500px;
+        margin: 50px 0;
+    }
+    footer .copyright .row {
+        flex-direction: column-reverse;
+    }
+    footer .copyright {
+        text-align: center;
+    }
+    footer .copyright .social-media {
+        justify-content: center;
+    }
+    footer input[type="text"],
+    footer input[type="button"] {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+
+/* for medium device */
+
+@media only screen and (max-width:768px) {
+    section.about div.slider img {
+        width: 25%;
+        padding: 80px 30px;
+    }
+    section.about div.client {
+        flex-direction: column-reverse;
+    }
+    section.contact form div {
+        flex-direction: column;
+    }
+    section.contact form input {
+        width: 100% !important;
+    }
+    footer .container-fluid {
+        padding: 50px 104px;
+    }
+}
+
+
+/* for small device  */
+
+@media only screen and (max-width:600px) {
+    section.welcome div.heading h2 {
+        font-size: 33px;
+    }
+    section.about div.slider img {
+        width: 33.33333%;
+        padding: 53px 30px;
+    }
+    section.video-play div.inner-content {
+        padding: 32px;
+    }
+    section.testimonial div.backcolor {
+        padding: 60px 20px;
+    }
+    footer .container-fluid {
+        padding: 50px 30px;
+    }
+}

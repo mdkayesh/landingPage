@@ -1,0 +1,1125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* =================================================
+    common css style
+================================================= */
+
+:root {
+    --mainColor: #0EA2BD;
+    --headingColor: #485664;
+    --headingPColor: #91A1AF;
+    --btnBgColor: #10b4d1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--headingPColor);
+}
+
+ul {
+    list-style: none;
+}
+
+button,
+.btn {
+    padding: 10px 17px;
+    border-radius: 5px;
+    background-color: var(--btnBgColor);
+    border: none;
+    color: white;
+    outline: none;
+    border: none;
+}
+
+.btn:hover {
+    color: white;
+}
+
+button a {
+    color: white !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--headingColor);
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+div.img img {
+    width: 100%;
+}
+
+div.heading {
+    text-align: center;
+}
+
+div.heading h2 {
+    font-size: 48px;
+    margin: 25px 0;
+    color: var(--headingColor);
+}
+
+div.heading p {
+    font-size: 18px;
+    color: var(--headingPColor);
+}
+
+div.heading span {
+    color: var(--mainColor);
+}
+
+
+/* =================================================
+    header css style
+================================================= */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50px;
+    background-color: #FFFFFF;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+
+/* scroll down and nav would be sticky */
+
+.stickyNav {
+    position: sticky;
+    top: 0;
+    box-shadow: 8px -16px 42px rgb(0 0 0 / 55%);
+}
+
+header div.logo {
+    font-size: 30px;
+    padding: 0px 30px;
+}
+
+header div.logo span {
+    color: var(--mainColor);
+    font-size: 40px;
+}
+
+header nav div.menu i {
+    position: relative;
+    cursor: pointer;
+    font-size: 22px;
+    margin: 0 25px;
+    z-index: 111;
+}
+
+header nav ul.navigation {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: rgba(38, 56, 72, 0.801);
+    width: 70%;
+    height: 100%;
+    left: -90%;
+    top: 0;
+    padding: 20px 40px;
+    transition: 0.5s;
+    overflow: auto;
+    z-index: 111;
+}
+
+div.shadow {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.319);
+    width: 100%;
+    height: 100%;
+}
+
+
+/* click the menubar and open menu */
+
+.showMenu {
+    left: 0 !important;
+}
+
+.showShadow {
+    left: 0 !important;
+}
+
+header nav ul.navigation li a {
+    display: block;
+    padding: 15px 0px;
+    transition: 0.5s;
+}
+
+header nav ul.navigation li a:hover {
+    color: white;
+}
+
+header nav ul li {
+    position: relative;
+}
+
+header nav ul li ul {
+    padding: 15px;
+}
+
+header nav ul .mega,
+.drop,
+.deep-drp {
+    position: sticky;
+    max-height: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+header nav ul li a i {
+    float: right;
+    transition: 0.5s;
+}
+
+
+/* javascript classlist for dropdown */
+
+header nav ul .showDrop {
+    padding: 15px !important;
+    border: 1px solid gray;
+    max-height: 1000px;
+}
+
+header nav ul li a.color {
+    color: white !important;
+}
+
+header nav ul li a i.rotate {
+    transform: rotate(180deg);
+    color: white !important;
+}
+
+
+/* =================================================
+    section welcome css style
+================================================= */
+
+section.welcome img {
+    display: block;
+    width: 60%;
+    margin: auto;
+    padding: 60px 0px;
+    animation: move 3s infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(5px);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+section.welcome div.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin: 50px 0;
+}
+
+section.welcome div.button a.watch {
+    margin-left: 30px;
+    color: var(--headingColor);
+}
+
+section.welcome div.button a i {
+    color: var(--mainColor);
+    margin-right: 5px;
+    font-size: 25px;
+}
+
+section.welcome div.button a:hover span {
+    color: var(--mainColor);
+}
+
+
+/* welcome section service-item */
+
+section.welcome div.service-item {
+    margin: 0px 0px;
+}
+
+section.welcome div.service-item i {
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: var(--mainColor);
+}
+
+section.welcome div.service-item {
+    padding: 34px 30px;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: all 0.5s;
+}
+
+section.welcome div.service-item:hover {
+    box-shadow: 10px 10px 26px rgb(0 0 0 /20%);
+    transform: translateY(-15px);
+}
+
+section.welcome div.service-item:hover h3 {
+    color: var(--mainColor);
+}
+
+
+/* =================================================
+    section about-content css style
+================================================= */
+
+section.about div.img {
+    margin: 20px 0;
+}
+
+section.about div.img img {
+    width: 100%;
+}
+
+section.about div.tab-content {
+    padding: 15px 0;
+}
+
+section.about li.nav-item a {
+    color: var(--headingColor);
+}
+
+section.about li.nav-item a:focus,
+section.about li.nav-item a.active {
+    color: var(--mainColor);
+}
+
+section.about div.tab-content p:first-child {
+    font-style: italic;
+}
+
+section.about div.about-content {
+    padding: 0 30px;
+}
+
+section.about div.about-content h5 span {
+    color: var(--mainColor);
+}
+
+section.about div.about-content h5 {
+    font-weight: 700;
+}
+
+
+/* slider style css */
+
+section.about div.slider-container {
+    overflow: hidden;
+}
+
+section.about div.slider-container .slider {
+    display: flex;
+    transition: 0.5s;
+}
+
+section.about div.slider img {
+    width: 16.666666%;
+    padding: 90px 45px;
+    cursor: pointer;
+    opacity: 0.4;
+}
+
+section.about div.slider img:hover {
+    opacity: 1;
+}
+
+
+/* client style css*/
+
+section.about div.client {
+    background-color: #ECEEEF;
+    border-radius: 10px;
+    padding: 40px 25px;
+    font-size: 22px;
+}
+
+section.about div.client button {
+    margin-top: 30px;
+}
+
+section.about div.client .col-sm-8 {
+    padding: 35px 20px;
+}
+
+
+/* =================================================
+    section video-play css style
+================================================= */
+
+section.video-play div.content1 {
+    background: url(img/onfocus-video-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.video-play div.content1 i {
+    color: #0EA2BD;
+    font-size: 85px;
+    cursor: pointer;
+}
+
+section.video-play div.content2 {
+    background: url(img/onfocus-content-bg.jpg);
+    background-size: cover;
+    padding: 0;
+}
+
+section.video-play div.content2 h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+section.video-play div.inner-content {
+    background-color: rgba(57, 68, 78, 0.528);
+    width: 100%;
+    height: 100%;
+    padding: 70px;
+    color: var(--headingPColor);
+}
+
+section.video-play div.inner-content button {
+    margin-top: 30px;
+}
+
+section.video-play div.inner-content button i {
+    margin-left: 6px;
+    transition: 0.5s;
+}
+
+section.video-play div.inner-content button:hover i {
+    margin-left: 10px;
+}
+
+section.video-play div.inner-content button:hover {
+    background-color: #0EA2BD;
+}
+
+section.video-play div.inner-content ul {
+    padding: 0;
+}
+
+section.video-play div.inner-content p {
+    font-style: italic;
+}
+
+section.video-play div.inner-content ul li {
+    list-style: none;
+    margin: 15px 0;
+}
+
+section.video-play div.inner-content ul li i {
+    color: #10b4d1;
+    margin: 0 5px;
+}
+
+
+/* =================================================
+    section features css style
+================================================= */
+
+section.features {
+    margin: 80px 0 0;
+}
+
+section.features ul li {
+    text-align: center;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+section.features .nav-tabs .nav-link.active {
+    background-color: var(--mainColor);
+}
+
+section.features .nav-tabs .nav-link.active h4,
+section.features .nav-tabs .nav-link.active i {
+    color: white;
+}
+
+section.features ul li a {
+    display: block;
+    padding: 15px 10px;
+    box-shadow: 5px 5px 19px rgb(0 0 0 / 32%);
+}
+
+section.features ul li a h4 {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+section.features ul li a i {
+    font-size: 40px;
+}
+
+section.features ul li:nth-child(1) i {
+    color: cyan;
+}
+
+section.features ul li:nth-child(2) i {
+    color: orange;
+}
+
+section.features ul li:nth-child(3) i {
+    color: brown;
+}
+
+section.features ul li:nth-child(4) i {
+    color: salmon;
+}
+
+section.features ul li:nth-child(5) i {
+    color: crimson;
+}
+
+section.features ul li:nth-child(6) i {
+    color: aqua;
+}
+
+section.features div.tab-content ul li {
+    text-align: left;
+}
+
+section.features div.tab-content ul li i {
+    color: var(--mainColor);
+    margin-right: 5px;
+}
+
+
+/* =================================================
+    section service css style
+================================================= */
+
+section.service div.service-item {
+    padding: 30px 12px;
+}
+
+section.service div.img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+section.service div.img img {
+    width: 100%;
+    transition: 0.5s;
+}
+
+section.service div.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(245, 245, 245, 0.786);
+    position: relative;
+    margin: -99px 27px 0 27px;
+    border-radius: 10px;
+}
+
+section.service div.icon {
+    font-size: 30px;
+    color: white;
+    background-color: var(--mainColor);
+    display: inline-block;
+    border-radius: 50%;
+    padding: 9px 17px;
+    border: 5px solid white;
+    position: absolute;
+    top: -38px;
+    transition: 0.5s;
+}
+
+section.service div.content div.details {
+    text-align: center;
+    padding: 57px 8px 8px;
+    box-shadow: 6px 5px 23px rgba(0, 0, 0, 0.348);
+    border-radius: 10px;
+}
+
+section.service div.content div.details h3 {
+    color: var(--headingPColor);
+    margin-bottom: 10px;
+}
+
+section.service div.service-item:hover div.details h3 {
+    color: var(--mainColor);
+}
+
+section.service div.service-item:hover div.icon {
+    border: 3px solid var(--mainColor);
+    color: var(--mainColor);
+    background-color: white;
+}
+
+section.service div.service-item:hover div.img img {
+    transform: scale(1.2);
+}
+
+
+/* =================================================
+    section testimonial css style
+================================================= */
+
+section.testimonial {
+    background: url(img/testimonials-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    margin: 100px 0;
+}
+
+section.testimonial div.backcolor {
+    background-color: rgba(11, 98, 114, 0.464);
+    height: 100%;
+    width: 100%;
+    padding: 60px 85px;
+}
+
+section.testimonial div.slider {
+    overflow: hidden;
+}
+
+section.testimonial div.slider .slider-content {
+    display: flex;
+    width: 500%;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+section.testimonial div.testimonial-item {
+    width: 100%;
+}
+
+section.testimonial div.details h4 {
+    color: white;
+    margin-top: 15px;
+}
+
+section.testimonial div.details p {
+    color: #bbddff;
+    font-size: 17px;
+}
+
+section.testimonial div.testimonial-item img {
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid gray;
+}
+
+section.testimonial div.testimonial-item div.star {
+    color: gold;
+}
+
+section.testimonial div.dot {
+    display: flex;
+    justify-content: center;
+}
+
+section.testimonial div.dot div.dot-item {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 2px;
+}
+
+
+/* =================================================
+    section pricing css style
+================================================= */
+
+section.pricing .pricing-content .item {
+    text-align: center;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.319);
+    margin: 50px 0;
+    padding: 10px 10px 60px;
+    border-radius: 10px;
+}
+
+section.pricing .pricing-content .item .item-head {
+    background-color: #485664;
+    padding: 50px;
+}
+
+section.pricing .pricing-content .item .item-head h3 {
+    color: white;
+    margin: 15px;
+}
+
+section.pricing .pricing-content .item .item-head h5 {
+    color: var(--headingPColor);
+}
+
+section.pricing .pricing-content .item .item-head h5 span {
+    color: white;
+    font-size: 45px;
+}
+
+section.pricing .pricing-content .item .item-head h5 i {
+    color: white;
+}
+
+section.pricing .pricing-content ul {
+    padding: 43px;
+}
+
+section.pricing .pricing-content ul li {
+    text-align: left;
+    list-style: disc;
+    padding: 18px 0px;
+}
+
+section.pricing .pricing-content:not(.pricing-content:nth-child(2)) button {
+    background-color: white;
+    border: 1px solid var(--mainColor);
+    color: var(--headingPColor);
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+section.pricing .pricing-content:not(:nth-child(2)) button:hover {
+    background-color: var(--btnBgColor);
+    color: white;
+}
+
+section.pricing .pricing-content:nth-child(2) .item {
+    border: 5px solid var(--mainColor);
+}
+
+section.pricing .pricing-content:nth-child(2) .item-head {
+    background-color: var(--mainColor);
+}
+
+
+/* =================================================
+    section question css style
+================================================= */
+
+section.question {
+    margin: 100px 0;
+}
+
+section.question .content {
+    padding: 14px;
+}
+
+section.question .accordion h3 {
+    box-shadow: 5px 4px 20px rgb(0 0 0 / 13%);
+    display: flex;
+    padding: 0 10px;
+    justify-content: center;
+    align-items: baseline;
+}
+
+section.question .accordion button {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    text-align: left;
+    transition: 0.5s;
+}
+
+section.question .accordion i {
+    color: var(--mainColor);
+    font-size: 18px;
+}
+
+section.question .accordion-content {
+    overflow: hidden;
+    max-height: 0;
+    transition: 0.5s;
+}
+
+section.question .accordion-content p {
+    padding: 0 37px 15px;
+}
+
+section.question .accordion i:last-child {
+    color: black;
+    padding: 0 10px;
+    /* position: absolute;
+    top: 30px;
+    right: 10px; */
+    transition: 0.5s;
+    transform: rotate(0deg);
+}
+
+
+/* for javascript */
+
+.rotate {
+    transform: rotate(180deg) !important;
+    color: var(--mainColor) !important;
+}
+
+section.question .accordion-content.show {
+    max-height: 400px !important;
+}
+
+section.question .img {
+    background: url(img/faq.jpg) center;
+    background-size: cover;
+    height: 100%;
+}
+
+
+/* =================================================
+    section portfolio css style
+================================================= */
+
+section.portfolio .portfolio-nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+section.portfolio .portfolio-nav ul li a {
+    color: rgb(23, 23, 23);
+    font-weight: 300;
+    padding: 10px;
+    transition: 0.5s;
+    display: block;
+}
+
+section.portfolio .portfolio-nav ul li a.active {
+    color: var(--mainColor) !important;
+}
+
+section.portfolio .portfolio-content {
+    overflow: hidden;
+    height: auto;
+}
+
+section.portfolio .portfolio-content .filterDiv {
+    display: none;
+    position: relative;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.showImg {
+    display: block !important;
+}
+
+section.portfolio .portfolio-content img {
+    width: 100%;
+    transition: all 0.5s;
+}
+
+section.portfolio .portfolio-content .img-details {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.352);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    transition: 0.5s;
+}
+
+section.portfolio .portfolio-content .filterDiv:hover img {
+    transform: scale(1.2);
+}
+
+section.portfolio .portfolio-content .filterDiv:hover .img-details {
+    opacity: 1;
+}
+
+section.portfolio .portfolio-content .img-details .img-info {
+    width: 90%;
+    padding: 23px 0;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+section.portfolio .portfolio-content .img-details .img-info h4 {
+    color: white;
+}
+
+section.portfolio .portfolio-content .img-details .img-info a {
+    color: rgb(192, 192, 192);
+    font-size: 20px;
+}
+
+
+/* =================================================
+    section team css style
+================================================= */
+
+section.team .member {
+    padding: 60px 11px;
+    cursor: pointer;
+}
+
+section.team .member img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+section.team .member .member-info {
+    text-align: center;
+    padding: 30px;
+    background-color: white;
+    margin: -52px 35px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 3px 4px 52px rgba(0, 0, 0, 0.319);
+}
+
+section.team .member .member-info .social {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    font-size: 18px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+section.team .member .member-info .social i {
+    padding: 10px;
+    background-color: var(--mainColor);
+    color: white;
+    border-radius: 50%;
+    margin-right: 20px;
+    transition: 0.5s;
+}
+
+section.team .member:hover .social {
+    opacity: 1;
+    top: -20px;
+}
+
+section.team .member:hover .social i {
+    margin-right: 0;
+}
+
+
+/* =================================================
+    section contact css style
+================================================= */
+
+section.contact {
+    padding: 100px 0;
+}
+
+section.contact div.map iframe {
+    width: 100%;
+    height: 400px;
+    padding: 20px;
+}
+
+section.contact .content .info {
+    box-shadow: 3px 3px 20px rgb(0 0 0 / 12%);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+section.contact .content .info .info-head h3 {
+    color: black;
+}
+
+section.contact .content .info .info-main {
+    display: flex;
+    padding: 15px 0;
+    font-size: 13px;
+}
+
+section.contact .content .info .info-main:not(:last-child) {
+    border-bottom: 1px solid gray;
+}
+
+section.contact .content .info .info-main p {
+    word-break: break-all;
+}
+
+section.contact .content .info .info-main h4 {
+    font-size: 18px;
+}
+
+section.contact .content .info .info-main i {
+    padding: 4px 10px;
+    font-size: 22px;
+    color: var(--mainColor);
+}
+
+section.contact form {
+    height: 100%;
+    text-align: center;
+}
+
+section.contact form div {
+    display: flex;
+    justify-content: space-between;
+}
+
+section.contact form input {
+    margin: 10px 0;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+section.contact form input:focus {
+    outline: 1px solid gray;
+}
+
+section.contact form input[type="text"],
+input[type="email"] {
+    width: 48%;
+}
+
+section.contact form input[name="subject"] {
+    width: 100%;
+}
+
+section.contact form textarea {
+    margin: 15px 0;
+    width: 100%;
+    padding: 15px;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+section.contact form input[type="submit"] {
+    background-color: var(--btnBgColor);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 0;
+    border: none;
+}
+
+
+/* =================================================
+    section footer css style
+================================================= */
+
+footer .container-fluid {
+    background-color: #485664;
+    color: white;
+    padding: 50px 30px;
+    font-size: 14px;
+}
+
+footer .container-fluid h4,
+footer h5 {
+    color: #e8e6e6;
+    margin-bottom: 20px;
+}
+
+footer h5 {
+    position: relative;
+}
+
+footer h5::before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 30px;
+    background-color: var(--mainColor);
+    left: 0;
+    bottom: -10px;
+    border-radius: 2px;
+}
+
+footer ul li a {
+    color: #cbcbcb;
+    font-size: 14px;
+}
+
+footer ul li a i {
+    margin-right: 3px;
+}
+
+footer ul li a:hover {
+    color: white;
+}
+
+footer .container-fluid ul {
+    padding: 0;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+footer input[type="text"] {
+    padding: 7px;
+    outline: none;
+}
+
+footer input[type="button"] {
+    padding: 6px;
+    font-size: 17px;
+    background-color: var(--btnBgColor);
+    color: white;
+    border: none;
+}
+
+footer .copyright {
+    background-color: #05505d;
+    padding: 30px;
+    margin-right: 12px;
+    color: white;
+}
+
+footer .copyright p a {
+    display: inline-block;
+}
+
+footer .copyright a:hover {
+    color: white;
+}
+
+footer .copyright .social-media {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer .copyright .social-media a {
+    padding: 10px;
+    font-size: 22px;
+    text-align: right;
+}

@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page 1</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- for animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a937c85fa3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="ressponsive.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">HeroBiz<span>.</span></div>
+        <nav>
+            <div class="shadow"></div>
+            <div class="menu">
+                <i class="fa-solid fa-bars" id="openMenu"></i>
+            </div>
+            <ul class="navigation" id="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="javascript:void(0)">Mega Menu <i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="mega">
+                        <li><a href="#">Cetagory 1</a>
+                            <ul>
+                                <li><a href="#">link1</a></li>
+                                <li><a href="#">link2</a></li>
+                                <li><a href="#">link3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Cetagory 2</a>
+                            <ul>
+                                <li><a href="#">link1</a></li>
+                                <li><a href="#">link2</a></li>
+                                <li><a href="#">link3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Cetagory 3</a>
+                            <ul>
+                                <li><a href="#">link1</a></li>
+                                <li><a href="#">link2</a></li>
+                                <li><a href="#">link3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0)">Dropdown <i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="drop">
+                        <li><a href="#">dropdown1</a></li>
+                        <li><a href="javascript:void(0)">dropdown2 <i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="deep-drp">
+                                <li><a href="#">link1</a></li>
+                                <li><a href="#">link2</a></li>
+                                <li><a href="#">link3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">dropdown3</a></li>
+                        <li><a href="#">dropdown4</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- welcome container -->
+    <section class="welcome container pb-5">
+        <img src="img/hero-carousel-3.svg" alt="hero-carousel" data-aos="zoom-in">
+        <div class="heading" data-aos="fade-up">
+            <h2 class="display-2">Welcome to <span>HeroBiz</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, delectus?</p>
+        </div>
+        <div class="button">
+            <a href="#about" class="btn">Get Started</a>
+            <a href="#" class="watch">
+                <i class="fa-solid fa-circle-play"></i>
+                <span>Watch video</span>
+            </a>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-6 mt-5" data-aos="zoom-out-right">
+                <div class="service-item">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h3>Lorem ipsum.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, atque.</p>
+                </div>
+            </div>
+            <div class="col-md-6 mt-5" data-aos="zoom-out-left">
+                <div class="service-item">
+                    <i class="fa-brands fa-hive"></i>
+                    <h3>Nemo Enim</h3>
+                    <p>Iure a debitis dignissimos veritatis, magnam expedita molestias alias natus ullam.</p>
+                </div>
+            </div>
+            <div class="col-md-6 mt-5" data-aos="zoom-out-right">
+                <div class="service-item">
+                    <i class="fa-solid fa-ethernet"></i>
+                    <h3>Magni Dolores</h3>
+                    <p>Rerum quisquam aliquid natus beatae Dolor ducimus nostrum doloremque quo ad!</p>
+                </div>
+            </div>
+            <div class="col-md-6 mt-5" data-aos="zoom-out-left">
+                <div class="service-item">
+                    <i class="fa-solid fa-circle-nodes"></i>
+                    <h3>Sed ut perspici</h3>
+                    <p>Sit amet consectetur adipisicing elit.vel quo quod, aperiam illum.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about container -->
+    <section id="about" class="about container pt-5 aos-init" data-aos="fade-up">
+        <!-- heading -->
+        <div class="heading">
+            <h2 class="display-2">About Us</h2>
+            <p>sit amet consectetur, adipisicing elit. Minus, possimus?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa sunt non quas illum natus odit enim dignissimos.</p>
+        </div>
+        <!-- tab container -->
+        <div class="row mt-5">
+            <div class="col-lg-4 img">
+                <img src="img/about.jpg" alt="about">
+            </div>
+            <div class="col-lg-8 about-content">
+                <h2>dolor sit, amet consectetur adipisicing elit. In rem eius ullam?</h2>
+
+                <div class="tab-container">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a href="#Saepe" data-bs-toggle="tab" class="nav-link active">Tab 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#Voluptates" data-bs-toggle="tab" class="nav-link">Tab 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#Corrupti" data-bs-toggle="tab" class="nav-link">Tap 3</a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+
+                    <div class="tab-content">
+                        <div id="Saepe" class="tab-pane active">
+                            <p>Consequuntur inventore voluptates consequatur aut vel et. Eos doloribus expedita. Sapiente atque consequatur minima nihil quae aspernatur quo suscipit voluptatem.</p>
+                            <div class="saep-content">
+                                <h5><span><i class="fa-solid fa-check"></i></span> Repudiandae rerum velit modi et officia quasi facilis</h5>
+                                <p>Laborum omnis voluptates voluptas qui sit aliquam blanditiis. Sapiente minima commodi dolorum non eveniet magni quaerat nemo et.</p>
+                            </div>
+                            <div class="saep-content">
+                                <h5><span><i class="fa-solid fa-check"></i></span> Incidunt non veritatis illum ea ut nisi
+                                </h5>
+                                <p>Non quod totam minus repellendus autem sint velit. Rerum debitis facere soluta tenetur. Iure molestiae assumenda sunt qui inventore eligendi voluptates nisi at. Dolorem quo tempora. Quia et perferendis.</p>
+                            </div>
+                            <div class="saep-content">
+                                <h5><span><i class="fa-solid fa-check"></i></span> Omnis ab quia nemo dignissimos rem eum quos..</h5>
+                                <p>Eius alias aut cupiditate. Dolor voluptates animi ut blanditiis quos nam. Magnam officia aut ut alias quo explicabo ullam esse. Sunt magnam et dolorem eaque magnam odit enim quaerat. Vero error error voluptatem eum.</p>
+                            </div>
+                        </div>
+                        <div id="Voluptates" class="tab-pane fade">
+                            <p>Consequuntur inventore voluptates consequatur aut vel et. Eos doloribus expedita. Sapiente atque consequatur minima nihil quae aspernatur quo suscipit voluptatem.</p>
+                            <div class="saep-content">
+                                <h5><span><i class="fa-solid fa-check"></i></span> Repudiandae rerum velit modi et officia quasi facilis</h5>
+                                <p>Laborum omnis voluptates voluptas qui sit aliquam blanditiis. Sapiente minima commodi dolorum non eveniet magni quaerat nemo et.</p>
+                            </div>
+                            <div class="saep-content">
+                                <h5><span><i class="fa-solid fa-check"></i></span> Incidunt non veritatis illum ea ut nisi
+                                </h5>
+                                <p>Non quod totam minus repellendus autem sint velit. Rerum debitis facere soluta tenetur. Iure molestiae assumenda sunt qui inventore eligendi voluptates nisi at. Dolorem quo tempora. Quia et perferendis.</p>
+                            </div>
+                            <div class="saep-content">
+                                <h5><span><i class="fa-solid fa-check"></i></span> Omnis ab quia nemo dignissimos rem eum quos..</h5>
+                                <p>Eius alias aut cupiditate. Dolor voluptates animi ut blanditiis quos nam. Magnam officia aut ut alias quo explicabo ullam esse. Sunt magnam et dolorem eaque magnam odit enim quaerat. Vero error error voluptatem eum.</p>
+                            </div>
+                        </div>
+
+                        <div id="Corrupti" class="tab-pane fade">
+                            <p>Consequuntur inventore voluptates consequatur aut vel et. Eos doloribus expedita. Sapiente atque consequatur minima nihil quae aspernatur quo suscipit voluptatem.</p>
+                            <div class="saep-content">
+                                <h5><span><i class="fa-solid fa-check"></i></span> Repudiandae rerum velit modi et officia quasi facilis</h5>
+                                <p>Laborum omnis voluptates voluptas qui sit aliquam blanditiis. Sapiente minima commodi dolorum non eveniet magni quaerat nemo et.</p>
+                            </div>
+                            <div class="saep-content">
+                                <h5><span><i class="fa-solid fa-check"></i></span> Incidunt non veritatis illum ea ut nisi
+                                </h5>
+                                <p>Non quod totam minus repellendus autem sint velit. Rerum debitis facere soluta tenetur. Iure molestiae assumenda sunt qui inventore eligendi voluptates nisi at. Dolorem quo tempora. Quia et perferendis.</p>
+                            </div>
+                            <div class="saep-content">
+                                <h5><span><i class="fa-solid fa-check"></i></span> Omnis ab quia nemo dignissimos rem eum quos..</h5>
+                                <p>Eius alias aut cupiditate. Dolor voluptates animi ut blanditiis quos nam. Magnam officia aut ut alias quo explicabo ullam esse. Sunt magnam et dolorem eaque magnam odit enim quaerat. Vero error error voluptatem eum.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- slider-container -->
+        <div class="slider-container" data-aos="zoom-in-down">
+            <div class="slider">
+                <img src="img/client-8.png" alt="client-8">
+                <img src="img/client-1.png" alt="client-1">
+                <img src="img/client-2.png" alt="client-2">
+                <img src="img/client-3.png" alt="client-3">
+                <img src="img/client-4.png" alt="client-4">
+                <img src="img/client-5.png" alt="client-5">
+                <img src="img/client-6.png" alt="client-6">
+                <img src="img/client-7.png" alt="client-7">
+                <img src="img/client-8.png" alt="client-8">
+                <img src="img/client-1.png" alt="client-1">
+                <img src="img/client-2.png" alt="client-2">
+                <img src="img/client-3.png" alt="client-3">
+                <img src="img/client-4.png" alt="client-4">
+                <img src="img/client-5.png" alt="client-5">
+                <img src="img/client-6.png" alt="client-6">
+                <img src="img/client-7.png" alt="client-7">
+            </div>
+        </div>
+        <!-- client -->
+        <div class="client row" data-aos="zoom-in-up">
+            <div class="col-md-8 pt-5">
+                <h1>Alias sunt quas Cupiditate oluptas hic minima</h1>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button type="button">Call To Action</button>
+            </div>
+            <div class="img col-md-4 pt-5">
+                <img src="img/cta.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- video play section -->
+    <section class="video-play container-fluid mt-5" data-aos="zoom-in">
+        <div class="row">
+            <div class="content1 col-lg-6">
+                <i class="fa-solid fa-circle-play"></i>
+            </div>
+            <div class="content2 col-lg-6">
+                <div class="inner-content">
+                    <h3>Voluptatem dignissimos provident quasi corporis</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <ul>
+                        <li><i class="fa-regular fa-circle-check"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </li>
+                        <li><i class="fa-regular fa-circle-check"></i>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                        <li><i class="fa-regular fa-circle-check"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                    </ul>
+                    <button type="button">Read More<i class="fa-solid fa-arrow-right-long"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- features section -->
+    <section class="features">
+        <div class="container">
+            <ul class="row nav nav-tabs">
+                <li class="nav-item col-6 col-md-4 col-lg-2" data-aos="zoom-in-up">
+                    <a href="#Modinest" class="nav-link active" data-bs-toggle="tab">
+                        <i class="fa-brands fa-bity"></i>
+                        <h4>Modinest</h4>
+                    </a>
+                </li>
+                <li class="nav-item col-6 col-md-4 col-lg-2" data-aos="zoom-in-up">
+                    <a href="#Undaesenti" class="nav-link" data-bs-toggle="tab">
+                        <i class="fa-solid fa-box"></i>
+                        <h4>Undaesenti</h4>
+                    </a>
+                </li>
+                <li class="nav-item col-6 col-md-4 col-lg-2" data-aos="zoom-in-up">
+                    <a href="#Pariatur" class="nav-link" data-bs-toggle="tab">
+                        <i class="fa-solid fa-anchor"></i>
+                        <h4>Pariatur</h4>
+                    </a>
+                </li>
+                <li class="nav-item col-6 col-md-4 col-lg-2" data-aos="zoom-in-up">
+                    <a href="#Nostrum" class="nav-link" data-bs-toggle="tab">
+                        <i class="fa-brands fa-atlassian"></i>
+                        <h4>Nostrum</h4>
+                    </a>
+                </li>
+                <li class="nav-item col-6 col-md-4 col-lg-2" data-aos="zoom-in-up">
+                    <a href="#Adipiscing" class="nav-link" data-bs-toggle="tab">
+                        <i class="fa-solid fa-disease"></i>
+                        <h4>Adipiscing</h4>
+                    </a>
+                </li>
+                <li class="nav-item col-6 col-md-4 col-lg-2" data-aos="zoom-in-up">
+                    <a href="#Reprehit" class="nav-link" data-bs-toggle="tab">
+                        <i class="fa-solid fa-map"></i>
+                        <h4>Reprehit</h4>
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content mt-5" data-aos="zoom-in-up">
+                <div class="tab-pane active" id="Modinest">
+                    <div class="row">
+                        <div class="content col-lg-8">
+                            <h2>Modinest</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <ul>
+                                <li><i class="fa-solid fa-circle-check"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                                <li><i class="fa-solid fa-circle-check"></i>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                                <li><i class="fa-solid fa-circle-check"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                            </ul>
+                            <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                officia deserunt mollit anim id est laborum</p>
+                        </div>
+                        <div class="img col-lg-4 py-4">
+                            <img src="img/features-1.svg" alt="features-1">
+                        </div>
+                    </div>
+                </div>
+                <div class=" tab-pane fade" id="Undaesenti">
+                    <div class="row">
+                        <div class="content col-lg-8">
+                            <h2>Undaesenti</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                officia deserunt mollit anim id est laborum</p>
+                            <ul>
+                                <li><i class="fa-solid fa-circle-check"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                                <li><i class="fa-solid fa-circle-check"></i>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                                <li><i class="fa-solid fa-circle-check"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit</li>
+                                <li><i class="fa-solid fa-circle-check"></i>voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                            </ul>
+                        </div>
+                        <div class="img col-lg-4 p-4">
+                            <img src="img/features-2.svg" alt="features-2">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="Pariatur">
+                    <div class="row">
+                        <div class="content col-lg-8">
+                            <h2>Pariatur</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <ul>
+                                <li><i class="fa-solid fa-circle-check "></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                                <li><i class="fa-solid fa-circle-check "></i>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                                <li><i class="fa-solid fa-circle-check "></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit</li>
+                            </ul>
+                            <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        </div>
+                        <div class="img col-lg-4 py-4">
+                            <img src="img/features-3.svg" alt="features-3">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="Nostrum">
+                    <div class="row">
+                        <div class="content col-lg-8">
+                            <h2>Nostrum</h2>
+                            <p>Sit amet consectetur adipisicing elit. Vero accusamus, cumque cum neque ipsa quasi ea laborum dignissimos. Exercitationem totam, tempore culpa commodi harum recusandae.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <ul>
+                                <li><i class="fa-solid fa-circle-check"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                                <li><i class="fa-solid fa-circle-check"></i>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                                <li><i class="fa-solid fa-circle-check"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit</li>
+                            </ul>
+                        </div>
+                        <div class="img col-lg-4 py-4">
+                            <img src="img/features-4.svg" alt="features-4">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="Adipiscing">
+                    <div class="row">
+                        <div class="content col-lg-8">
+                            <h2>Adipiscing</h2>
+                            <p>Dolorum dicta corporis aut fugit obcaecati autem magnam laudantium illum omnis excepturi nihil porro nostrum voluptates sequi distinctio modi assumenda nemo, dignissimos in maxime officiis ut velit asperiores. Eius quae perspiciatis
+                                dolores.
+                            </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <ul>
+                                <li><i class="fa-solid fa-circle-check"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                                <li><i class="fa-solid fa-circle-check"></i>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                                <li><i class="fa-solid fa-circle-check"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit</li>
+                            </ul>
+                        </div>
+                        <div class="img col-lg-4 py-4">
+                            <img src="img/features-5.svg" alt="features-5">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="Reprehit">
+                    <div class="row">
+                        <div class="content col-lg-8">
+                            <h2>Reprehit</h2>
+                            <p>Consectetur adipisicing elit. Dolores, officiis? Voluptatibus enim quia necessitatibus doloremque odio libero reprehenderit vero, dolor a nemo facere incidunt alias unde fuga, numquam ipsa! Commodi numquam illo ipsum corporis
+                                laborum consequatur accusantium nostrum, nulla itaque?</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <ul>
+                                <li><i class="fa-solid fa-circle-check"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                                <li><i class="fa-solid fa-circle-check"></i>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                                <li><i class="fa-solid fa-circle-check"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit</li>
+                                <li><i class="fa-solid fa-circle-check"></i>Adipisicing elit. Vitae inventore quaerat officia! Libero dolores obcaecati est iure excepturi vel totam?</li>
+                            </ul>
+                        </div>
+                        <div class="img col-lg-4 py-4">
+                            <img src="img/features-6.svg" alt="features-6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- service section  -->
+    <section id="service" class="service container pt-5">
+        <div class="heading" data-aos="fade-down">
+            <h2 class="display-2">Our Service</h2>
+            <p>Quia cum laboriosam, explicabo iste voluptatum nisi earum repellat consectetur assumenda labore nostrum cumque nemo provident modi fugit repudiandae voluptate expedita. Voluptatibus.</p>
+        </div>
+        <div class="row">
+            <div class="service-item col-md-6">
+                <div class="img" data-aos="fade-up">
+                    <img src="img/services-1.jpg" alt="">
+                </div>
+                <div class="content" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="icon"><i class="fa-solid fa-network-wired"></i></div>
+                    <div class="details">
+                        <a href="#">
+                            <h3>Nesciunt Mete</h3>
+                        </a>
+                        <p>Quia cum laboriosam, explicabo iste voluptatum nisi earum repellat consectetur assumenda labore nostrum cumque nemo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-item col-md-6">
+                <div class="img" data-aos="fade-up">
+                    <img src="img/services-2.jpg" alt="">
+                </div>
+                <div class="content" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="icon"><i class="fa-solid fa-tower-broadcast"></i></div>
+                    <div class="details">
+                        <a href="#">
+                            <h3>Eosle Commodi</h3>
+                        </a>
+                        <p>Consectetur adipisicing elit. Quia itaque accusantium, sequi libero amet minus odit minima nesciunt cumque sint qui.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-item col-md-6">
+                <div class="img" data-aos="fade-up">
+                    <img src="img/services-3.jpg" alt="">
+                </div>
+                <div class="content" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="icon"><i class="fa-solid fa-camera-retro"></i></div>
+                    <div class="details">
+                        <a href="#">
+                            <h3>Ledo Markt</h3>
+                        </a>
+                        <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-item col-md-6">
+                <div class="img" data-aos="fade-up">
+                    <img src="img/services-4.jpg" alt="">
+                </div>
+                <div class="content" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="icon"><i class="fa-brands fa-sketch"></i></div>
+                    <div class="details">
+                        <a href="#">
+                            <h3>Asperiores Commodit</h3>
+                        </a>
+                        <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-item col-md-6">
+                <div class="img" data-aos="fade-up">
+                    <img src="img/services-5.jpg" alt="">
+                </div>
+                <div class="content" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="icon"><i class="fa-solid fa-chart-area"></i></div>
+                    <div class="details">
+                        <a href="#">
+                            <h3>Quidem fuga</h3>
+                        </a>
+                        <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-item col-md-6">
+                <div class="img" data-aos="fade-up">
+                    <img src="img/services-6.jpg" alt="">
+                </div>
+                <div class="content" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="icon"><i class="fa-solid fa-laptop-file"></i></div>
+                    <div class="details">
+                        <a href="">
+                            <h3>Dolori Architecto</h3>
+                        </a>
+                        <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- testimonial section -->
+    <section class="testimonial">
+        <div class="backcolor">
+            <div class="slider" id="test-slider">
+                <div class="slider-content" id="test-slide">
+                    <div class="testimonial-item" data-aos="fade-up">
+                        <div class="img">
+                            <img src="img/testimonials-1.jpg" alt="testimonial">
+                        </div>
+                        <div class="details">
+                            <h4>Saul Goodman</h4>
+                            <p>Ceo Founder</p>
+                        </div>
+                        <div class="star ">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="content">
+                            amet consectetur adipisicing elit. Cumque optio dolorem officia dolores incidunt quasi dolor alias, voluptate amet eaque, a voluptatibus ipsum dolorem dolor! Exercitationem amet repudiandae quibusdam, dolore optio at quod in vel?
+                        </p>
+                    </div>
+                    <div class="testimonial-item" data-aos="fade-up">
+                        <div class="img">
+                            <img src="img/testimonials-2.jpg" alt="testimonial">
+                        </div>
+                        <div class="details">
+                            <h4>Sara Wilsson</h4>
+                            <p>Ceo Founder</p>
+                        </div>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="content">
+                            amet consectetur adipisicing elit. Cumque optio dolorem officia dolores incidunt quasi dolor alias, voluptate amet eaque, a voluptatibus ipsum dolorem dolor! Exercitationem amet repudiandae quibusdam, dolore optio at quod in vel?
+                        </p>
+                    </div>
+                    <div class="testimonial-item" data-aos="fade-up">
+                        <div class="img">
+                            <img src="img/testimonials-3.jpg" alt="testimonial">
+                        </div>
+                        <div class="details">
+                            <h4>Jena Karlis</h4>
+                            <p>Ceo Founder</p>
+                        </div>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="content">
+                            amet consectetur adipisicing elit. Cumque optio dolorem officia dolores incidunt quasi dolor alias, voluptate amet eaque, a voluptatibus ipsum dolorem dolor! Exercitationem amet repudiandae quibusdam, dolore optio at quod in vel?
+                        </p>
+                    </div>
+                    <div class="testimonial-item" data-aos="fade-up">
+                        <div class="img ">
+                            <img src="img/testimonials-4.jpg" alt="testimonial">
+                        </div>
+                        <div class="details ">
+                            <h4>Matt Bradon</h4>
+                            <p>Ceo Founder</p>
+                        </div>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="content">
+                            amet consectetur adipisicing elit. Cumque optio dolorem officia dolores incidunt quasi dolor alias, voluptate amet eaque, a voluptatibus ipsum dolorem dolor! Exercitationem amet repudiandae quibusdam, dolore optio at quod in vel?
+                        </p>
+                    </div>
+                    <div class="testimonial-item" data-aos="fade-up">
+                        <div class="img ">
+                            <img src="img/testimonials-5.jpg" alt="testimonial">
+                        </div>
+                        <div class="details">
+                            <h4>John Larson</h4>
+                            <p>Ceo Founder</p>
+                        </div>
+                        <div class="star ">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="content">
+                            amet consectetur adipisicing elit. Cumque optio dolorem officia dolores incidunt quasi dolor alias, voluptate amet eaque, a voluptatibus ipsum dolorem dolor! Exercitationem amet repudiandae quibusdam, dolore optio at quod in vel?
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="dot">
+                <div class="dot-item"></div>
+                <div class="dot-item"></div>
+                <div class="dot-item"></div>
+                <div class="dot-item"></div>
+                <div class="dot-item"></div>
+            </div>
+        </div>
+    </section>
+    <!-- pricing sedtion -->
+    <section class="pricing container">
+        <div class="heading" data-aos="fade-down">
+            <h2 class="display-2">Our Pricing</h2>
+            <p>Architecto nobis eos vel nam quidem vitae temporibus voluptates qui hic deserunt iusto omnis nam voluptas asperiores sequi tenetur dolores incidunt enim voluptatem magnam cumque fuga.</p>
+        </div>
+        <div class="row">
+            <div class="pricing-content col-lg-4" data-aos="zoom-in-up" data-aos-delay="500">
+                <div class="item">
+                    <div class="item-head">
+                        <h3>free plan</h3>
+                        <h5><i class="fa-solid fa-dollar-sign"></i><span>0</span>/month</h5>
+                    </div>
+                    <ul>
+                        <li>Quam adipiscing vitae proin</li>
+                        <li>Nec feugiat nisl pretium</li>
+                        <li>Nulla at volutpat diam uteera</li>
+                        <li>Pharetra massa massa ultricies </li>
+                        <li>Massa ultricies mi quis hendrerit</li>
+                    </ul>
+                    <button type="button">Buy Now</button>
+                </div>
+            </div>
+            <div class="pricing-content col-lg-4" data-aos="zoom-in-up" data-aos-delay="1000">
+                <div class="item">
+                    <div class="item-head">
+                        <h3>free plan</h3>
+                        <h5><i class="fa-solid fa-dollar-sign"></i><span>0</span>/month</h5>
+                    </div>
+                    <ul>
+                        <li>Quam adipiscing vitae proin</li>
+                        <li>Nec feugiat nisl pretium</li>
+                        <li>Nulla at volutpat diam uteera</li>
+                        <li>Pharetra massa massa ultricies </li>
+                        <li>Massa ultricies mi quis hendrerit</li>
+                    </ul>
+                    <button type="button">Buy Now</button>
+                </div>
+            </div>
+            <div class="pricing-content col-lg-4" data-aos="zoom-in-up" data-aos-delay="1500">
+                <div class="item">
+                    <div class="item-head">
+                        <h3>free plan</h3>
+                        <h5><i class="fa-solid fa-dollar-sign"></i><span>0</span>/month</h5>
+                    </div>
+                    <ul>
+                        <li>Quam adipiscing vitae proin</li>
+                        <li>Nec feugiat nisl pretium</li>
+                        <li>Nulla at volutpat diam uteera</li>
+                        <li>Pharetra massa massa ultricies </li>
+                        <li>Massa ultricies mi quis hendrerit</li>
+                    </ul>
+                    <button type="button">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--question section -->
+    <section class="question container-fluid" data-aos="fade-up">
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="content">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit</p>
+                    <div class="accordion-container">
+                        <div class="accordion" data-aos="fade-up " data-aos-delay="500" data-aos-duration="1500">
+                            <h3>
+                                <i class="fa-solid fa-circle-question"></i>
+                                <button>
+                                    Tempora ullam doloremque aliquid modi iure suscipit laboriosam nostrum?
+                                </button>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </h3>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt accusantium illum repudiandae neque error ipsam laboriosam? Tempora ullam doloremque aliquid cum consequuntur adipisci modi iure suscipit laboriosam nostrum.
+                            </p>
+                        </div>
+                        <div class="accordion" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1500">
+                            <h3>
+                                <i class="fa-solid fa-circle-question"></i>
+                                <button>
+                                    consequuntur adipisci modi iure suscipit laboriosam nostrum, praesentium beatae?
+                                </button>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </h3>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt accusantium illum repudiandae neque error ipsam laboriosam? Tempora ullam doloremque aliquid cum consequuntur adipisci modi iure suscipit laboriosam nostrum,
+                                praesentium beatae.neque error ipsam laboriosam? Tempora ullam doloremque aliquid cum consequuntur adipisci modi iure suscipit laboriosam nostrum, praesentium beatae.
+                            </p>
+                        </div>
+                        <div class="accordion" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1500">
+                            <h3>
+                                <i class="fa-solid fa-circle-question"></i>
+                                <button>
+                                    Neque error ipsam laboriosam? Tempora ullam doloremque?
+                                </button>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </h3>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt accusantium illum repudiandae neque error ipsam laboriosam? Tempora ullam doloremque aliquid cum consequuntur.
+                            </p>
+                        </div>
+                        <div class="accordion" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1500">
+                            <h3>
+                                <i class="fa-solid fa-circle-question"></i>
+                                <button>
+                                    Aliquid modi iure suscipit laboriosam nostrum?
+                                </button>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </h3>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt accusantium illum repudiandae neque error ipsam
+                            </p>
+                        </div>
+                        <div class="accordion" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1500">
+                            <h3>
+                                <i class="fa-solid fa-circle-question"></i>
+                                <button>
+                                    Illum repudiandae neque error ipsam laboriosam Tempora?
+                                </button>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </h3>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt accusantium illum repudiandae neque error ipsam laboriosam? Tempora ullam doloremque aliquid cum consequuntur adipisci modi iure suscipit laboriosam nostrum,
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="img"></div>
+            </div>
+        </div>
+    </section>
+    <!-- portfolio section -->
+    <section id="portfolio" class="portfolio pt-5">
+        <div class="heading container">
+            <h2 class=" display-2">Portfolio</h2>
+            <p>Natus non vitae recusandae id. Fugit, fuga maiores, laboriosam aspernatur incidunt sint necessitatibus, atque facere est reiciendis quae beatae delectus saepe exercitationem dolorum? Numquam, necessitatibus. Error in modi atque quam numquam
+                quasi.
+            </p>
+        </div>
+        <div class="portfolio-nav">
+            <ul>
+                <li><a href="javascript:void(0)" class="active">All</a></li>
+                <li><a href="javascript:void(0)">App</a></li>
+                <li><a href="javascript:void(0)">Product</a></li>
+                <li><a href="javascript:void(0)">Branding</a></li>
+                <li><a href="javascript:void(0)">Books</a></li>
+            </ul>
+        </div>
+        <div class="portfolio-content container-fluid" id="port-content">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 filterDiv all app">
+                    <img src="img/app-1.jpg" alt="app">
+                    <div class="img-details">
+                        <div class="img-info">
+                            <h4>App-1</h4>
+                            <div class="link">
+                                <a href="img/app-1.jpg" title="App-1">
+                                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                </a>
+                                <a href="portfolio-details.html">
+                                    <i class="fa-solid fa-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 filterDiv all books">
+                    <img src="img/books-1.jpg" alt="books">
+                    <div class="img-details">
+                        <div class="img-info">
+                            <h4>Book-1</h4>
+                            <div class="link">
+                                <a href="img/books-1.jpg" title="book-1">
+                                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                </a>
+                                <a href="portfolio-details.html">
+                                    <i class="fa-solid fa-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 filterDiv all product">
+                    <img src="img/product-3.jpg" alt="product">
+                    <div class="img-details">
+                        <div class="img-info">
+                            <h4>Product-3</h4>
+                            <div class="link ">
+                                <a href="img/product-3.jpg" title="Product-3">
+                                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                </a>
+                                <a href="portfolio-details.html">
+                                    <i class="fa-solid fa-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 filterDiv all branding">
+                    <img src="img/branding-1.jpg" alt="Branding">
+                    <div class="img-details">
+                        <div class="img-info">
+                            <h4>Branding-1</h4>
+                            <div class="link ">
+                                <a href="img/branding-1.jpg" title="Branding-1">
+                                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                </a>
+                                <a href="portfolio-details.html">
+                                    <i class="fa-solid fa-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 filterDiv all app">
+                    <img src="img/app-2.jpg" alt="app">
+                    <div class="img-details">
+                        <div class="img-info">
+                            <h4>App-2</h4>
+                            <div class="link">
+                                <a href="img/app-2.jpg" title="App-2">
+                                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                </a>
+                                <a href="portfolio-details.html">
+                                    <i class="fa-solid fa-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 filterDiv all books">
+                    <img src="img/books-2.jpg" alt="books">
+                    <div class="img-details">
+                        <div class="img-info">
+                            <h4>Book-2</h4>
+                            <div class="link">
+                                <a href="img/books-2.jpg" title="Book-2">
+                                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                </a>
+                                <a href="portfolio-details.html">
+                                    <i class="fa-solid fa-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 filterDiv all branding">
+                    <img src="img/branding-2.jpg" alt="branding">
+                    <div class="img-details">
+                        <div class="img-info">
+                            <h4>Branding-2</h4>
+                            <div class="link ">
+                                <a href="img/branding-2.jpg" title="Branding-2">
+                                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                </a>
+                                <a href="portfolio-details.html">
+                                    <i class="fa-solid fa-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 filterDiv all product">
+                    <img src="img/product-2.jpg" alt="product">
+                    <div class="img-details">
+                        <div class="img-info">
+                            <h4>Product-2</h4>
+                            <div class="link">
+                                <a href="img/product-2.jpg" title="Product-2">
+                                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                </a>
+                                <a href="portfolio-details.html">
+                                    <i class="fa-solid fa-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 filterDiv all app">
+                    <img src="img/app-3.jpg" alt="app">
+                    <div class="img-details">
+                        <div class="img-info">
+                            <h4>App-3</h4>
+                            <div class="link">
+                                <a href="img/app-3.jpg" title="App-3">
+                                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                </a>
+                                <a href="portfolio-details.html">
+                                    <i class="fa-solid fa-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 filterDiv all books">
+                    <img src="img/books-3.jpg" alt="books">
+                    <div class="img-details">
+                        <div class="img-info">
+                            <h4>Book-3</h4>
+                            <div class="link">
+                                <a href="img/books-3.jpg" title="book-3">
+                                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                </a>
+                                <a href="portfolio-details.html">
+                                    <i class="fa-solid fa-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 filterDiv all branding">
+                    <img src="img/branding-3.jpg" alt="branding">
+                    <div class="img-details">
+                        <div class="img-info">
+                            <h4>Branding-3</h4>
+                            <div class="link">
+                                <a href="img/branding-3.jpg" title="Branding-3">
+                                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                </a>
+                                <a href="portfolio-details.html">
+                                    <i class="fa-solid fa-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 filterDiv all product">
+                    <img src="img/product-1.jpg" alt="product">
+                    <div class="img-details">
+                        <div class="img-info">
+                            <h4>Product-1</h4>
+                            <div class="link">
+                                <a href="img/product-1.jpg" title="Product-1">
+                                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                </a>
+                                <a href="portfolio-details.html">
+                                    <i class="fa-solid fa-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- team section -->
+    <section class="team container pt-5" id="team">
+        <div class="heading">
+            <h2 class="display-2">Our Team</h2>
+            <p>Tenetur id laudantium atque quidem perferendis voluptatum similique hic ex, in nam fugiat nobis ea, adipisci nisi distinctio reiciendis ipsum repellendus quibusdam! Eligendi!</p>
+        </div>
+        <div class="row ">
+            <div class="col-md-6">
+                <div class="member">
+                    <img src="img/team-1.jpg" alt="team">
+                    <div class="member-info">
+                        <div class="social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                        <h4>Walter White</h4>
+                        <p> Chief Executive Officer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="member">
+                    <img src="img/team-2.jpg" alt="team">
+                    <div class="member-info">
+                        <div class="social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                        <h4>Sarah Jhonson</h4>
+                        <p>Product Manager</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="member">
+                    <img src="img/team-3.jpg" alt="team">
+                    <div class="member-info">
+                        <div class="social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                        <h4>William Anderson</h4>
+                        <p>CTO</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact section -->
+    <section class="contact container pt-5" id="contact">
+        <div class="heading">
+            <h2 class="display-2">Contact Us</h2>
+            <p>Ea vitae aspernatur deserunt voluptatem impedit deserunt magnam occaecati dssumenda quas ut ad dolores adipisci aliquam.</p>
+        </div>
+        <!-- map -->
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"></iframe>
+        </div>
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-4 pb-5">
+                    <div class="info">
+                        <div class="info-head">
+                            <h3>Get in Touch</h3>
+                            <p>Officiis dolorum, asperiores facilis numquam a praesentium. Ipsa possimus in animi natus voluptate aliquid similique illo?</p>
+                        </div>
+                        <div class="info-main">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <h4>Location:</h4>
+                                <p>A108 Adam Street, New York, NY 535022</p>
+                            </div>
+                        </div>
+                        <div class="info-main">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <h4>Email:</h4>
+                                <p>kayeskhanakash@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="info-main">
+                            <i class="fa-solid fa-mobile"></i>
+                            <div>
+                                <h4>Call:</h4>
+                                <p>+8801734909372</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-8">
+                    <form action="php" method="post">
+                        <div>
+                            <input type="text" name="name" placeholder="Your Name...">
+                            <input type="email" name="email" placeholder="Your Email...">
+                        </div>
+                        <input type="text" name="subject" placeholder="Subject">
+                        <textarea name="message" cols="80" rows="10" placeholder="message"></textarea>
+                        <input type="submit" value="Send Message">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <div class="row container-fluid">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="contact ">
+                    <h4>HeroBiz</h4>
+                    <p>
+                        A108 Adam Street
+                        <br> NY 535022, USA
+                        <br>
+                        <br>
+                        <strong>Phone:</strong> +1 5589 55488 55
+                        <br>
+                        <strong>Email:</strong> info@example.com
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-2">
+                <div class="links">
+                    <h5>Useful Links</h5>
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-angle-right"></i>Home</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angle-right"></i>About Us</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angle-right"></i>Services</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angle-right"></i>Terms of Service</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angle-right"></i>Privacy and Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="service ">
+                    <h5>Our Services</h5>
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-angle-right"></i>Web Design</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angle-right"></i>Web Development</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angle-right"></i>Product Management</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angle-right"></i>Marketing</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angle-right"></i>Graphic Design</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="newsletter">
+                    <h5>Our newsletter</h5>
+                    <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                    <input type="text">
+                    <input type="button" value="Subscribe">
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="row">
+                <div class="col-lg-6">
+                    <p>© Copyright HeroBiz. All Rights Reserved Designed by <a href="# ">BootstrapMade</a></p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="social-media">
+                        <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-skype"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            // Global settings:
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile',
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 120, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 1000, // values from 0 to 3000, with step 50ms
+            easing: 'linear', // default easing for AOS animations
+            once: true, // whether animation should happen only once - while scrolling down
+        });
+    </script>
+</body>
+
+</html>
